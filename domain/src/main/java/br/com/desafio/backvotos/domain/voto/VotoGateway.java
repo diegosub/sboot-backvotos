@@ -11,6 +11,6 @@ public interface VotoGateway {
 
     Optional<Voto> getById(String id);
 
-
+    Integer getCountCpfByIdPauta(String cpf, String idPauta);
 
 }

@@ -5,8 +5,6 @@ import br.com.desafio.backvotos.domain.exception.NotFoundException;
 import br.com.desafio.backvotos.domain.voto.Voto;
 import br.com.desafio.backvotos.domain.voto.VotoGateway;
 
-import java.util.List;
-
 public class GetVotoUseCaseImpl implements GetVotoUseCase {
 
     private final VotoGateway gateway;

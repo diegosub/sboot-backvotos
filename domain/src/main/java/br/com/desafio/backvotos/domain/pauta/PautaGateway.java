@@ -11,8 +11,6 @@ public interface PautaGateway {
 
     Pauta update(Pauta pauta);
 
-    Integer countCpfByPauta(String cpf, String idPauta);
-
     Optional<Pauta> getById(String id);
 
     Pagination<Pauta> pesquisar(SearchQuery query);

@@ -17,9 +17,7 @@ public class PautaGatewayImpl implements PautaGateway {
 
     @Autowired
     private PautaRepository repository;
-
-    private VotoRepos
-
+    
     @Override
     public Pauta insert(Pauta pauta) {
         var persistence = repository.save(PautaMapper.toPersistence(pauta));
@@ -30,12 +28,6 @@ public class PautaGatewayImpl implements PautaGateway {
     public Pauta update(Pauta pauta) {
         var persistence = repository.save(PautaMapper.toPersistence(pauta));
         return PautaMapper.toDomain(persistence);
-    }
-
-    @Override
-    public Integer countCpfByPauta(String cpf, String idPauta) {
-        return repository.countCpfByPauta(cpf, idPauta);
-        return null;
     }
 
     @Override
