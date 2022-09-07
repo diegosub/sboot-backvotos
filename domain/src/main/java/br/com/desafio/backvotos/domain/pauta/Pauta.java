@@ -60,6 +60,7 @@ public class Pauta {
         this.nome = nome;
         this.dataInicio = dataInicio;
         this.dataFim = dataFim;
+        this.updatedAt = Instant.now();
     }
 
     public void validate(final ValidationHandler handler) {

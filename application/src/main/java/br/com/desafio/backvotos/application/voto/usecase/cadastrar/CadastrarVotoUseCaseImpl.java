@@ -57,7 +57,7 @@ public class CadastrarVotoUseCaseImpl implements CadastrarVotoUseCase {
     }
 
     private void validarVoto(String cpf, String idPauta) {
-        var count = pautaGateway.countCpfByPauta(cpf, idPauta);
+        var count = votoGateway.countCpfByPauta(cpf, idPauta);
 
         if(count > 0) {
             throw DomainException.with("O Associado já votou nessa pauta.");

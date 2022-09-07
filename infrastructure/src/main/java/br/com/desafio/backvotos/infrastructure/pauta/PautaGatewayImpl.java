@@ -6,6 +6,7 @@ import br.com.desafio.backvotos.domain.search.Pagination;
 import br.com.desafio.backvotos.domain.search.SearchQuery;
 import br.com.desafio.backvotos.infrastructure.pauta.mapper.PautaMapper;
 import br.com.desafio.backvotos.infrastructure.pauta.persistence.PautaRepository;
+import br.com.desafio.backvotos.infrastructure.voto.model.VotoResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,8 @@ public class PautaGatewayImpl implements PautaGateway {
 
     @Autowired
     private PautaRepository repository;
+
+    private VotoRepos
 
     @Override
     public Pauta insert(Pauta pauta) {
@@ -31,7 +34,7 @@ public class PautaGatewayImpl implements PautaGateway {
 
     @Override
     public Integer countCpfByPauta(String cpf, String idPauta) {
-        //return repository.countCpfByPauta(cpf, idPauta);
+        return repository.countCpfByPauta(cpf, idPauta);
         return null;
     }
 

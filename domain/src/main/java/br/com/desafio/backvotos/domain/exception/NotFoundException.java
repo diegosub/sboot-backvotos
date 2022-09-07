@@ -16,7 +16,7 @@ public class NotFoundException extends NoStackTraceException {
             final Class<?> classe,
             final String id
     ) {
-        final var error = "%s with ID %s was not found".formatted(
+        final var error = "%s com o ID %s não foi encontrado".formatted(
                 classe.getSimpleName(),
                 id
         );

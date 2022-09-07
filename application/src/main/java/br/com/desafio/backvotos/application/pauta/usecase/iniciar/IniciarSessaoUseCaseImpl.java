@@ -24,7 +24,7 @@ public class IniciarSessaoUseCaseImpl implements IniciarSessaoUseCase {
 
         var nome = pauta.getNome();
         var dataInicio = Instant.now();
-        var dataFim = input.minutos() == null ? dataInicio.plusSeconds(60) : dataInicio.plusSeconds(input.minutos());
+        var dataFim = input.minutos() == null ? dataInicio.plusSeconds(60) : dataInicio.plusSeconds(input.minutos() * 60);
 
         pauta.update(
                 nome,

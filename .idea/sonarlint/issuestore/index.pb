@@ -9,8 +9,6 @@ Ldomain/src/main/java/br/com/desafio/backvotos/domain/utils/InstantUtils.java,e
 Ldomain/src/main/java/br/com/desafio/backvotos/domain/search/SearchQuery.java,5\1\510dcbe14104188d1398572d2bdbb57c3e9ff032
 â
 Ydomain/src/main/java/br/com/desafio/backvotos/domain/exception/NoStackTraceException.java,c\b\cb82932cf54b5348df0ec5a05407e35929ee9d98
-Ö
-Udomain/src/main/java/br/com/desafio/backvotos/domain/exception/NotFoundException.java,f\c\fcc826e18cf6795a02c8b5717a1610e71506ad6d
 É
 Sdomain/src/main/java/br/com/desafio/backvotos/domain/exception/DomainException.java,f\d\fdb92be7955491638963eae6fcbc1925fce18ad9
 Ñ
@@ -29,8 +27,6 @@ qapplication/src/main/java/br/com/desafio/backvotos/application/pauta/usecase/ca
 Ldomain/src/main/java/br/com/desafio/backvotos/domain/enums/TipoVotoEnum.java,4\1\416ad17ebb0af7a2c542f8aae47b5845925bf7c4
 á
 Wapplication/src/main/java/br/com/desafio/backvotos/application/voto/dto/VotoOutput.java,1\a\1a3bfad3898a6d5fb8e027e6857a6f47ca3b74c5
-}
-Mdomain/src/main/java/br/com/desafio/backvotos/domain/voto/VotoValidation.java,8\e\8e338f2442f1c90275e7112b4a564b3e72ddf3ca
 s
 Cdomain/src/test/java/br/com/desafio/backvotos/domain/PautaTest.java,d\f\dfa3a7fc12a7a2d907b9b1c09ae368ddc810665b
 r
@@ -41,14 +37,10 @@ oapplication/src/main/java/br/com/desafio/backvotos/application/voto/usecase/cad
 Mapplication/src/main/java/br/com/desafio/backvotos/application/UseCaseIO.java,d\1\d19c870930732125959e001c2e28a4859f7e8879
 ô
 iapplication/src/main/java/br/com/desafio/backvotos/application/voto/usecase/listar/ListarVotoUseCase.java,b\8\b89e0fbf491928515f8884db02b5d1b0e37d38f2
-z
-Jdomain/src/main/java/br/com/desafio/backvotos/domain/voto/VotoGateway.java,9\8\9890a1f9362ed828ef5fda2f6ef28faf79ee3c86
 ù
 mapplication/src/main/java/br/com/desafio/backvotos/application/voto/usecase/listar/ListarVotoUseCaseImpl.java,b\5\b52900255dc7c043ee330085d106069cc02dc16a
 
 Oapplication/src/test/java/br/com/desafio/backvotos/application/UseCaseTest.java,c\4\c42c7376a26069e31c1c02c1fc24a2491207b500
-
-Odomain/src/main/java/br/com/desafio/backvotos/domain/pauta/PautaValidation.java,0\c\0c6647dc6d23abe43a83af978807c661b6d3a43d
 ö
 japplication/src/test/java/br/com/desafio/backvotos/application/pauta/iniciar/IniciarSessaoUseCaseTest.java,0\2\0252d2028c71a70973254bb31131d35335ae03fa
 õ
@@ -67,11 +59,5 @@ K
 infrastructure/build.gradle,d\0\d08ad7275ca05d13cb570f6f624eee8075619a60
 ê
 `infrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/config/WebServerConfig.java,0\3\03c54d3b9cdc6f8190e8d8439fcad91f2a3b1b15
-õ
-kinfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/pauta/persistence/PautaRepository.java,e\0\e0b061d549238904fc46a94a2f1bcfc1906abd8e
-î
-dinfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/pauta/persistence/PautaJpa.java,4\9\49d8c91e1bd113c258b3cc1e471715c69cb71413
-u
-Edomain/src/main/java/br/com/desafio/backvotos/domain/pauta/Pauta.java,8\6\866d4e6edecc283953f2b19c2b79ca9e7196d3af
 ë
 aapplication/src/main/java/br/com/desafio/backvotos/application/pauta/dto/CadastrarPautaInput.java,9\1\910c6f12ef628d0c6acbd34c367a4f181e149ad8

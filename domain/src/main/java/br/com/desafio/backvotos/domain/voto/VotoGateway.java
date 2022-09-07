@@ -11,6 +11,6 @@ public interface VotoGateway {
 
     Optional<Voto> getById(String id);
 
-    List<Voto> findAll(String idPauta);
+
 
 }

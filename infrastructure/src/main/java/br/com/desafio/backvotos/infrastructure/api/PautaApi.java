@@ -32,7 +32,7 @@ public interface PautaApi {
     ResponseEntity<PautaResponse> inserir(@RequestBody CadastrarPautaRequest payload);
 
     @PutMapping(
-            value = "iniciarSessao/{id}",
+            value = "{id}/iniciarSessao",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
