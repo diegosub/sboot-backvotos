@@ -1,0 +1,29 @@
+version: "3.9"
+
+networks:
+  backvotos-network:
+    driver: bridge
+
+services:
+  backvotos-postgres:
+    image: postgres:14.1
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=backvotos
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgresql/data:/var/lib/postgresql/data
+    networks:
+      - backvotos-network
+
+  backvotos-app:
+    build: .
+    container_name: backvotos-pp
+    ports:
+      - "8080:8080"
+    networks:
+      - backvotos-network
+    depends_on:
+      - backvotos-postgres
