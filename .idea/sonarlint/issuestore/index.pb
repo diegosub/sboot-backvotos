@@ -51,16 +51,10 @@ Oapplication/src/test/java/br/com/desafio/backvotos/application/UseCaseTest.java
 Odomain/src/main/java/br/com/desafio/backvotos/domain/pauta/PautaValidation.java,0\c\0c6647dc6d23abe43a83af978807c661b6d3a43d
 ö
 japplication/src/test/java/br/com/desafio/backvotos/application/pauta/iniciar/IniciarSessaoUseCaseTest.java,0\2\0252d2028c71a70973254bb31131d35335ae03fa
-è
-_application/src/main/java/br/com/desafio/backvotos/application/voto/dto/CadastrarVotoInput.java,d\5\d53e028e23e514b6d93c1290ce2feffda069e1b0
-s
-Cdomain/src/main/java/br/com/desafio/backvotos/domain/voto/Voto.java,6\4\64e85a85b2f6ca5bcf3b3c1cf9f38a71d3240311
 õ
 kapplication/src/test/java/br/com/desafio/backvotos/application/voto/cadastrar/CadastrarVotoUseCaseTest.java,5\4\54b6ffad8ba862e9abfcba4507ebde36341c4deb
 ù
 mapplication/src/test/java/br/com/desafio/backvotos/application/pauta/cadastrar/CadastrarPautaUseCaseTest.java,a\5\a53221a5439dbd769cd00d99b8d013962a9f237a
-£
-sapplication/src/main/java/br/com/desafio/backvotos/application/voto/usecase/cadastrar/CadastrarVotoUseCaseImpl.java,7\3\732ce3f9bdc9e0e8eb51fd96bb175f17c04a562b
 ç
 ]infrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/exception/ErrorType.java,a\b\ab4ccd7117fc493a11664870367cf9828b4a86a3
 â
@@ -79,9 +73,5 @@ kinfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/pauta/pers
 dinfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/pauta/persistence/PautaJpa.java,4\9\49d8c91e1bd113c258b3cc1e471715c69cb71413
 u
 Edomain/src/main/java/br/com/desafio/backvotos/domain/pauta/Pauta.java,8\6\866d4e6edecc283953f2b19c2b79ca9e7196d3af
-õ
-kinfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/pauta/model/CadastrarPautaRequest.java,a\8\a8e66c31b7f2198f3ca7ba68b0398f7baa31e591
-í
-binfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/pauta/mapper/PautaMapper.java,5\6\563ed254d83c381973b45bb761563270fddd608b
 ë
 aapplication/src/main/java/br/com/desafio/backvotos/application/pauta/dto/CadastrarPautaInput.java,9\1\910c6f12ef628d0c6acbd34c367a4f181e149ad8
