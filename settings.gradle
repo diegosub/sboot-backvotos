@@ -1,0 +1,5 @@
+rootProject.name = 'sboot-back-votos'
+include 'domain'
+include 'application'
+include 'infrastructure'
+

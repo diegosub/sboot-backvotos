@@ -1,0 +1,12 @@
+
+o	java:S116
+"ZRename this field "MIN_NOME_LENGTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(α€΅ι
+o	java:S116"ZRename this field "MAX_NOME_LENGTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(όδ΅Ή
+q	java:S116"]Rename this field "MSG_ERRO_VALIDACAO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(βα
+7
+java:S1170
+"!Make this final field static too.(α€΅ι
+7
+java:S1170"!Make this final field static too.(όδ΅Ή
+6
+java:S1170"!Make this final field static too.(βα
