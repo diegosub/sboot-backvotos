@@ -1,13 +1,9 @@
 package br.com.desafio.backvotos.infrastructure.api;
 
-import br.com.desafio.backvotos.application.pauta.dto.CadastrarPautaInput;
-import br.com.desafio.backvotos.application.pauta.dto.IniciarSessaoInput;
-import br.com.desafio.backvotos.application.pauta.dto.PautaOutput;
 import br.com.desafio.backvotos.domain.search.Pagination;
 import br.com.desafio.backvotos.infrastructure.pauta.model.CadastrarPautaRequest;
 import br.com.desafio.backvotos.infrastructure.pauta.model.IniciarSessaoRequest;
 import br.com.desafio.backvotos.infrastructure.pauta.model.PautaResponse;
-import br.com.desafio.backvotos.infrastructure.pauta.model.ResultadoResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

@@ -1,27 +1,0 @@
-
-{
-java:S1128"_Remove this unused import 'br.com.desafio.backvotos.application.pauta.dto.CadastrarPautaInput'.(íğÿb8û¸ÖÙ±0
-€
-java:S1128"^Remove this unused import 'br.com.desafio.backvotos.application.pauta.dto.IniciarSessaoInput'.(²ªÚÜùÿÿÿÿ8û¸ÖÙ±0
-‹
-java:S1128"oRemove this unused import 'br.com.desafio.backvotos.application.pauta.usecase.cadastrar.CadastrarPautaUseCase'.(¤–°L8û¸ÖÙ±0
-…
-java:S1128"cRemove this unused import 'br.com.desafio.backvotos.application.pauta.usecase.get.GetPautaUseCase'.(‰²‹ëûÿÿÿÿ8ü¸ÖÙ±0
-‰
-java:S1128"lRemove this unused import 'br.com.desafio.backvotos.application.pauta.usecase.iniciar.IniciarSessaoUseCase'.(î£ü8ü¸ÖÙ±0
-Œ
-java:S1128"oRemove this unused import 'br.com.desafio.backvotos.application.pauta.usecase.pesquisar.PesquisarPautaUseCase'.(èü²Í8ü¸ÖÙ±0
-k
-java:S1128"NRemove this unused import 'br.com.desafio.backvotos.domain.search.Pagination'.(ğÇæº8ü¸ÖÙ±0
-q
-java:S1128"ORemove this unused import 'br.com.desafio.backvotos.domain.search.SearchQuery'.(İ±ã×úÿÿÿÿ8ı¸ÖÙ±0
-n
-java:S1128"QRemove this unused import 'br.com.desafio.backvotos.infrastructure.api.PautaApi'.(—ûİ¥8ş¸ÖÙ±0
-z
-java:S1128"]Remove this unused import 'br.com.desafio.backvotos.infrastructure.pauta.mapper.PautaMapper'.(¯—8ş¸ÖÙ±0
-ˆ
-java:S1128"fRemove this unused import 'br.com.desafio.backvotos.infrastructure.pauta.model.CadastrarPautaRequest'.(áşš‡üÿÿÿÿ8ş¸ÖÙ±0
-‡
-java:S1128"eRemove this unused import 'br.com.desafio.backvotos.infrastructure.pauta.model.IniciarSessaoRequest'.(º¸Œûÿÿÿÿ8ş¸ÖÙ±0
-€
-java:S1128"^Remove this unused import 'br.com.desafio.backvotos.infrastructure.pauta.model.PautaResponse'.(–…š×úÿÿÿÿ8ÿ¸ÖÙ±0

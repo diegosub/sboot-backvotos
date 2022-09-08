@@ -14,16 +14,31 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./postgresql/data:/var/lib/postgresql/data
+      - ./docker/postgresql/data:/var/lib/postgresql/data
     networks:
       - backvotos-network
 
   backvotos-app:
     build: .
-    container_name: backvotos-pp
+    environment:
+      DB_HOST: backvotos-postgres
+    container_name: 'backvotos-app'
     ports:
       - "8080:8080"
     networks:
       - backvotos-network
     depends_on:
       - backvotos-postgres
+      - backvotos-rabbitmq
+
+  backvotos-rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: 'backvotos-rabbitmq'
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - ./docker/rabbitmq/data/:/var/lib/rabbitmq/
+      - ./docker/rabbitmq/log/:/var/log/rabbitmq
+    networks:
+      - backvotos-network

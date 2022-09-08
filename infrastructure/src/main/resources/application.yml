@@ -10,10 +10,9 @@ server:
     threads:
       worker: 64
       io: 4
-
 spring:
   datasource:
-    url: jdbc:postgresql://${postgres.url}/${postgres.database}
+    url: jdbc:postgresql://${DB_HOST:localhost:5432}/backvotos
     username: ${postgres.username}
     password: ${postgres.password}
     hikari:
@@ -39,3 +38,8 @@ spring:
     deserialization:
       fail-on-unknown-properties: true
       fail-on-ignored-properties: true
+  rabbitmq:
+    host: ${rabbitmq.url}
+    port: ${rabbitmq.port}
+    username: ${rabbitmq.username}
+    password: ${rabbitmq.password}

@@ -13,7 +13,6 @@ import br.com.desafio.backvotos.infrastructure.pauta.mapper.PautaMapper;
 import br.com.desafio.backvotos.infrastructure.pauta.model.CadastrarPautaRequest;
 import br.com.desafio.backvotos.infrastructure.pauta.model.IniciarSessaoRequest;
 import br.com.desafio.backvotos.infrastructure.pauta.model.PautaResponse;
-import br.com.desafio.backvotos.infrastructure.pauta.model.ResultadoResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;

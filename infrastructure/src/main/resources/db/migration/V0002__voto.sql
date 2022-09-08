@@ -6,6 +6,10 @@ CREATE TABLE tb_voto (
     created_at timestamp without time zone NOT NULL,
 
     CONSTRAINT pk_voto PRIMARY KEY (id),
-    CONSTRAINT fk_voto_pauta
+    CONSTRAINT fk_voto_pauta FOREIGN KEY (id_pauta)
+                REFERENCES tb_pauta (id) MATCH SIMPLE
+                ON UPDATE NO ACTION
+                ON DELETE NO ACTION
+                NOT VALID,
     CONSTRAINT uk_cpf_voto UNIQUE (id_pauta, cpf)
 );
