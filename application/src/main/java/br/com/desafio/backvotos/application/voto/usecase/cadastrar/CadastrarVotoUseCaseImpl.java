@@ -1,6 +1,5 @@
 package br.com.desafio.backvotos.application.voto.usecase.cadastrar;
 
-import java.time.Instant;
 import br.com.desafio.backvotos.application.voto.dto.CadastrarVotoInput;
 import br.com.desafio.backvotos.application.voto.dto.VotoOutput;
 import br.com.desafio.backvotos.domain.exception.DomainException;
@@ -10,6 +9,8 @@ import br.com.desafio.backvotos.domain.pauta.PautaGateway;
 import br.com.desafio.backvotos.domain.validation.handler.ValidationHandler;
 import br.com.desafio.backvotos.domain.voto.Voto;
 import br.com.desafio.backvotos.domain.voto.VotoGateway;
+
+import java.time.Instant;
 
 public class CadastrarVotoUseCaseImpl implements CadastrarVotoUseCase {
 

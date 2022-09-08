@@ -1,11 +1,3 @@
 
 U
-java:S1118":Add a private constructor to hide the implicit public one.(Ğä¿•ûÿÿÿÿ
-{
-java:S1128"_Remove this unused import 'br.com.desafio.backvotos.application.pauta.dto.CadastrarPautaInput'.(íğÿb8ºöÃ±0
-€
-java:S1128"^Remove this unused import 'br.com.desafio.backvotos.application.pauta.dto.IniciarSessaoInput'.(²ªÚÜùÿÿÿÿ8ºöÃ±0
-ˆ
-java:S1128"fRemove this unused import 'br.com.desafio.backvotos.infrastructure.pauta.model.CadastrarPautaRequest'.(áşš‡üÿÿÿÿ8ºöÃ±0
-‡
-java:S1128"eRemove this unused import 'br.com.desafio.backvotos.infrastructure.pauta.model.IniciarSessaoRequest'.(º¸Œûÿÿÿÿ8ºöÃ±0
+java:S1118":Add a private constructor to hide the implicit public one.(Ğä¿•ûÿÿÿÿ

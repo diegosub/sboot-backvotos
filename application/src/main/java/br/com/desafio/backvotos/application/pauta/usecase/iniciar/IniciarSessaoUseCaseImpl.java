@@ -2,6 +2,7 @@ package br.com.desafio.backvotos.application.pauta.usecase.iniciar;
 
 import br.com.desafio.backvotos.application.pauta.dto.IniciarSessaoInput;
 import br.com.desafio.backvotos.application.pauta.dto.PautaOutput;
+import br.com.desafio.backvotos.domain.exception.DomainException;
 import br.com.desafio.backvotos.domain.exception.NotFoundException;
 import br.com.desafio.backvotos.domain.pauta.Pauta;
 import br.com.desafio.backvotos.domain.pauta.PautaGateway;
@@ -21,6 +22,11 @@ public class IniciarSessaoUseCaseImpl implements IniciarSessaoUseCase {
     public PautaOutput execute(IniciarSessaoInput input) {
         var pauta = gateway.getById(input.id())
                 .orElseThrow(() -> NotFoundException.with(Pauta.class, input.id()));
+
+        if(pauta.getDataInicio() != null
+                && !pauta.getDataInicio().toString().trim().equals("")) {
+            throw DomainException.with("A sessão de votação já foi iniciada para essa pauta");
+        }
 
         var nome = pauta.getNome();
         var dataInicio = Instant.now();

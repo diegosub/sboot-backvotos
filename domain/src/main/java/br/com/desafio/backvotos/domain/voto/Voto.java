@@ -1,6 +1,7 @@
 package br.com.desafio.backvotos.domain.voto;
 
 import br.com.desafio.backvotos.domain.enums.TipoVotoEnum;
+import br.com.desafio.backvotos.domain.pauta.Pauta;
 import br.com.desafio.backvotos.domain.validation.handler.ValidationHandler;
 
 import java.time.Instant;
@@ -32,6 +33,16 @@ public class Voto {
         final var id = UUID.randomUUID().toString();
         final var now = Instant.now();
         return new Voto(id, idPauta, cpf, valor, now);
+    }
+
+    public static Voto clonar(
+            final String id,
+            final String idPauta,
+            final String cpf,
+            final TipoVotoEnum valor,
+            final Instant createdAt
+    ) {
+        return new Voto(id, idPauta, cpf, valor, createdAt);
     }
 
     public void validate(final ValidationHandler handler) {

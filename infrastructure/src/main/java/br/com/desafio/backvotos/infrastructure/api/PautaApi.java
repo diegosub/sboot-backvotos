@@ -7,6 +7,7 @@ import br.com.desafio.backvotos.domain.search.Pagination;
 import br.com.desafio.backvotos.infrastructure.pauta.model.CadastrarPautaRequest;
 import br.com.desafio.backvotos.infrastructure.pauta.model.IniciarSessaoRequest;
 import br.com.desafio.backvotos.infrastructure.pauta.model.PautaResponse;
+import br.com.desafio.backvotos.infrastructure.pauta.model.ResultadoResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
@@ -70,6 +71,5 @@ public interface PautaApi {
             @RequestParam(name = "sort", required = false, defaultValue = "name") final String sort,
             @RequestParam(name = "dir", required = false, defaultValue = "asc") final String direction
     );
-
 
 }

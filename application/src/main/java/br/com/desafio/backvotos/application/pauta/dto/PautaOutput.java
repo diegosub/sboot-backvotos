@@ -9,6 +9,7 @@ public record PautaOutput(
         String nome,
         Instant dataInicio,
         Instant dataFim,
+        boolean contabilizado,
         Instant createdAt,
         Instant updatedAt
 ) {
@@ -18,6 +19,7 @@ public record PautaOutput(
                 pauta.getNome(),
                 pauta.getDataInicio(),
                 pauta.getDataFim(),
+                pauta.isContabilizado(),
                 pauta.getCreatedAt(),
                 pauta.getUpdatedAt()
         );

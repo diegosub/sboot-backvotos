@@ -14,7 +14,7 @@ public class VotoTest {
     public void givenValidParams_whenCreateAVoto_thenReturnAValidVoto() {
         final var idPauta = "ec01a7d6-2d90-11ed-a261-0242ac120002";
         final var cpf = "71237673062";
-        final var valor = TipoVotoEnum.SIM;
+        final var valor = TipoVotoEnum.NAO;
 
         var voto = Voto.create(idPauta, cpf, valor);
         voto.validate(new ValidationHandler());

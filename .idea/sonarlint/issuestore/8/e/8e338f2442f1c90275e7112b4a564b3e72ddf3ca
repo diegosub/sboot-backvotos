@@ -1,0 +1,4 @@
+
+q	java:S116"]Rename this field "MSG_ERRO_VALIDACAO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(βα
+6
+java:S1170"!Make this final field static too.(βα

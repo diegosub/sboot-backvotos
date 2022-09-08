@@ -1,5 +1,6 @@
 package br.com.desafio.backvotos.infrastructure.voto.persistence;
 
+import br.com.desafio.backvotos.domain.enums.TipoVotoEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

@@ -1,11 +1,7 @@
 package br.com.desafio.backvotos.infrastructure.pauta.mapper;
 
-import br.com.desafio.backvotos.application.pauta.dto.CadastrarPautaInput;
-import br.com.desafio.backvotos.application.pauta.dto.IniciarSessaoInput;
 import br.com.desafio.backvotos.application.pauta.dto.PautaOutput;
 import br.com.desafio.backvotos.domain.pauta.Pauta;
-import br.com.desafio.backvotos.infrastructure.pauta.model.CadastrarPautaRequest;
-import br.com.desafio.backvotos.infrastructure.pauta.model.IniciarSessaoRequest;
 import br.com.desafio.backvotos.infrastructure.pauta.model.PautaResponse;
 import br.com.desafio.backvotos.infrastructure.pauta.persistence.PautaJpa;
 
