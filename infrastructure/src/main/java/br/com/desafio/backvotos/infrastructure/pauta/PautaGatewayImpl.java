@@ -7,6 +7,7 @@ import br.com.desafio.backvotos.domain.search.SearchQuery;
 import br.com.desafio.backvotos.infrastructure.pauta.mapper.PautaMapper;
 import br.com.desafio.backvotos.infrastructure.pauta.persistence.PautaJpa;
 import br.com.desafio.backvotos.infrastructure.pauta.persistence.PautaRepository;
+import br.com.desafio.backvotos.infrastructure.utils.SpecificationUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
@@ -14,8 +15,6 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
-
-import static br.com.desafio.backvotos.infrastructure.utils.SpecificationUtils.like;
 
 @Service
 public class PautaGatewayImpl implements PautaGateway {
@@ -48,14 +47,8 @@ public class PautaGatewayImpl implements PautaGateway {
                 Sort.by(Sort.Direction.fromString(query.direction()), query.sort())
         );
 
-        // Busca dinamica pelo criterio terms (name)
-        final var specifications = Optional.ofNullable(query.terms())
-                .filter(str -> !str.isBlank())
-                .map(this::assembleSpecification)
-                .orElse(null);
-
         final var pageResult =
-                this.repository.findAll(Specification.where(specifications), page);
+                this.repository.findAll(Specification.where(SpecificationUtils.flike("nome", query.terms())), page);
 
         return new Pagination<>(
                 pageResult.getNumber(),
@@ -65,8 +58,4 @@ public class PautaGatewayImpl implements PautaGateway {
         );
     }
 
-    private Specification<PautaJpa> assembleSpecification(final String str) {
-        final Specification<PautaJpa> nameLike = like("name", str);
-        return nameLike;
-    }
 }

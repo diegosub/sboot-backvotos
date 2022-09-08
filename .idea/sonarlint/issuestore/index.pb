@@ -3,8 +3,6 @@ C
 domain/build.gradle,a\3\a3021bb5ba623a461b5fdb89ae51923a4945c354
 |
 Ldomain/src/main/java/br/com/desafio/backvotos/domain/utils/InstantUtils.java,e\8\e84a7555e10139ad730b880c6c0c103c1a871674
-|
-Ldomain/src/main/java/br/com/desafio/backvotos/domain/search/SearchQuery.java,5\1\510dcbe14104188d1398572d2bdbb57c3e9ff032
 ‰
 Ydomain/src/main/java/br/com/desafio/backvotos/domain/exception/NoStackTraceException.java,c\b\cb82932cf54b5348df0ec5a05407e35929ee9d98
 „
