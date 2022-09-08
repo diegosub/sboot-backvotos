@@ -22,7 +22,10 @@ services:
     build: .
     environment:
       DB_HOST: backvotos-postgres
-    container_name: 'backvotos-app'
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command:  ["/wait-for-it.sh", "localhost:5432", "-t", "5", "--", "./gradlew", "bootRun"]
     ports:
       - "8080:8080"
     networks:

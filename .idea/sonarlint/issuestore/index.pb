@@ -1,6 +1,4 @@
 
-<
-build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 C
 domain/build.gradle,a\3\a3021bb5ba623a461b5fdb89ae51923a4945c354
 |
@@ -37,9 +35,6 @@ ginfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/exception/
 `infrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/config/WebServerConfig.java,0\3\03c54d3b9cdc6f8190e8d8439fcad91f2a3b1b15
 —
 gapplication/src/main/java/br/com/desafio/backvotos/application/voto/usecase/get/GetVotoUseCaseImpl.java,8\6\86e8149c73f95eed9d961fe236708b295a156d3a
-:
-
-Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
 …
 Udomain/src/main/java/br/com/desafio/backvotos/domain/exception/NotFoundException.java,f\c\fcc826e18cf6795a02c8b5717a1610e71506ad6d
 
@@ -70,5 +65,3 @@ binfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/voto/persi
 `infrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/voto/mapper/VotoMapper.java,0\f\0f2ee2bf51ab66769bea6b776dd0b3cb004bf21f
 ¢
 rapplication/src/main/java/br/com/desafio/backvotos/application/pauta/usecase/iniciar/IniciarSessaoUseCaseImpl.java,6\5\651f0f1d057c8f27de7cca6c1f0b05c0a840f930
-†
-Vinfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/api/PautaApi.java,3\b\3b5b3fb67f6d52364b3b43000f8a38cce7bbafc6

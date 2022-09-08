@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "voto")
 @Tag(name = "Voto")
 public interface VotoApi {
-
     @PostMapping(
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE

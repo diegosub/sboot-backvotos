@@ -12,9 +12,9 @@ server:
       io: 4
 spring:
   datasource:
-    url: jdbc:postgresql://${DB_HOST:localhost:5432}/backvotos
-    username: ${postgres.username}
-    password: ${postgres.password}
+    url: jdbc:postgresql://${DB_HOST:localhost}/backvotos
+    username: postgres
+    password: postgres
     hikari:
       pool-name: master
       auto-commit: false
