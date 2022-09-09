@@ -1,4 +1,4 @@
-package br.com.desafio.backvotos.infrastructure.api;
+package br.com.desafio.backvotos.infrastructure.api.v1;
 
 import br.com.desafio.backvotos.domain.search.Pagination;
 import br.com.desafio.backvotos.infrastructure.pauta.model.CadastrarPautaRequest;
@@ -12,7 +12,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RequestMapping(value = "pauta")
+@RequestMapping(value = "/v1/pauta")
 @Tag(name = "Pauta")
 public interface PautaApi {
 

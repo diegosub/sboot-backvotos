@@ -1,22 +1,9 @@
-package br.com.desafio.backvotos.infrastructure.api.controller;
+package br.com.desafio.backvotos.infrastructure.api.v1.controller;
 
-import br.com.desafio.backvotos.application.pauta.dto.CadastrarPautaInput;
-import br.com.desafio.backvotos.application.pauta.dto.IniciarSessaoInput;
-import br.com.desafio.backvotos.application.pauta.usecase.cadastrar.CadastrarPautaUseCase;
-import br.com.desafio.backvotos.application.pauta.usecase.get.GetPautaUseCase;
-import br.com.desafio.backvotos.application.pauta.usecase.iniciar.IniciarSessaoUseCase;
-import br.com.desafio.backvotos.application.pauta.usecase.pesquisar.PesquisarPautaUseCase;
 import br.com.desafio.backvotos.application.voto.dto.CadastrarVotoInput;
 import br.com.desafio.backvotos.application.voto.usecase.cadastrar.CadastrarVotoUseCase;
 import br.com.desafio.backvotos.application.voto.usecase.get.GetVotoUseCase;
-import br.com.desafio.backvotos.domain.search.Pagination;
-import br.com.desafio.backvotos.domain.search.SearchQuery;
-import br.com.desafio.backvotos.infrastructure.api.PautaApi;
-import br.com.desafio.backvotos.infrastructure.api.VotoApi;
-import br.com.desafio.backvotos.infrastructure.pauta.mapper.PautaMapper;
-import br.com.desafio.backvotos.infrastructure.pauta.model.CadastrarPautaRequest;
-import br.com.desafio.backvotos.infrastructure.pauta.model.IniciarSessaoRequest;
-import br.com.desafio.backvotos.infrastructure.pauta.model.PautaResponse;
+import br.com.desafio.backvotos.infrastructure.api.v1.VotoApi;
 import br.com.desafio.backvotos.infrastructure.voto.mapper.VotoMapper;
 import br.com.desafio.backvotos.infrastructure.voto.model.CadastrarVotoRequest;
 import br.com.desafio.backvotos.infrastructure.voto.model.VotoResponse;

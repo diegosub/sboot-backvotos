@@ -1,9 +1,9 @@
-package br.com.desafio.backvotos.infrastructure.api.controller;
+package br.com.desafio.backvotos.infrastructure.api.v1.controller;
 
 import br.com.desafio.backvotos.application.resultado.dto.ResultadoInput;
 import br.com.desafio.backvotos.application.resultado.usecase.contabilizar.ContabilizarResultadoUseCase;
 import br.com.desafio.backvotos.application.resultado.usecase.get.GetResultadoUseCase;
-import br.com.desafio.backvotos.infrastructure.api.ResultadoApi;
+import br.com.desafio.backvotos.infrastructure.api.v1.ResultadoApi;
 import br.com.desafio.backvotos.infrastructure.resultado.mapper.ResultadoMapper;
 import br.com.desafio.backvotos.infrastructure.resultado.model.ResultadoRequest;
 import br.com.desafio.backvotos.infrastructure.resultado.model.ResultadoResponse;

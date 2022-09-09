@@ -17,7 +17,7 @@ public class ResultadoProducer {
     private Queue queue;
 
     public void send(String message) {
-        log.info("Iniciando envio da mensagem: " + message + " para a fila de resultado.");
+        log.info("Iniciando envio da mensagem: " + message + " para a fila de resultado.  QUEUE: " + this.queue.getName());
         rabbitTemplate.convertAndSend(this.queue.getName(), message);
         log.info("Mensagem enviada.");
     }

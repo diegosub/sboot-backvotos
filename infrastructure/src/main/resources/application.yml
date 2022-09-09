@@ -1,7 +1,7 @@
 server:
   port: 8080
   servlet:
-    context-path: /api/v1
+    context-path: /api
   compression:
     enabled: true
     mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
@@ -12,9 +12,9 @@ server:
       io: 4
 spring:
   datasource:
-    url: jdbc:postgresql://${DB_HOST:localhost}/backvotos
-    username: postgres
-    password: postgres
+    url: jdbc:postgresql://${DB_HOST:localhost}/${postgres.database}
+    username: ${postgres.username}
+    password: ${postgres.password}
     hikari:
       pool-name: master
       auto-commit: false
@@ -39,7 +39,7 @@ spring:
       fail-on-unknown-properties: true
       fail-on-ignored-properties: true
   rabbitmq:
-    host: ${rabbitmq.url}
+    host: ${QUEUE_HOST:localhost}
     port: ${rabbitmq.port}
     username: ${rabbitmq.username}
     password: ${rabbitmq.password}

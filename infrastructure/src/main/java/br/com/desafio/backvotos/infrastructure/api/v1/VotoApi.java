@@ -1,4 +1,4 @@
-package br.com.desafio.backvotos.infrastructure.api;
+package br.com.desafio.backvotos.infrastructure.api.v1;
 
 import br.com.desafio.backvotos.application.pauta.dto.CadastrarPautaInput;
 import br.com.desafio.backvotos.application.pauta.dto.IniciarSessaoInput;
@@ -17,7 +17,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RequestMapping(value = "voto")
+@RequestMapping(value = "/v1/voto")
 @Tag(name = "Voto")
 public interface VotoApi {
     @PostMapping(

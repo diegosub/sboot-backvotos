@@ -1,4 +1,4 @@
-package br.com.desafio.backvotos.infrastructure.api;
+package br.com.desafio.backvotos.infrastructure.api.v1;
 
 import br.com.desafio.backvotos.infrastructure.resultado.model.ResultadoRequest;
 import br.com.desafio.backvotos.infrastructure.resultado.model.ResultadoResponse;
@@ -12,7 +12,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RequestMapping(value = "resultado")
+@RequestMapping(value = "/v1/resultado")
 @Tag(name = "Resultado")
 public interface ResultadoApi {
 

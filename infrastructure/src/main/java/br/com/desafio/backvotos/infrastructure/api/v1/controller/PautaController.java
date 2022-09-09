@@ -1,4 +1,4 @@
-package br.com.desafio.backvotos.infrastructure.api.controller;
+package br.com.desafio.backvotos.infrastructure.api.v1.controller;
 
 import br.com.desafio.backvotos.application.pauta.dto.CadastrarPautaInput;
 import br.com.desafio.backvotos.application.pauta.dto.IniciarSessaoInput;
@@ -8,7 +8,7 @@ import br.com.desafio.backvotos.application.pauta.usecase.iniciar.IniciarSessaoU
 import br.com.desafio.backvotos.application.pauta.usecase.pesquisar.PesquisarPautaUseCase;
 import br.com.desafio.backvotos.domain.search.Pagination;
 import br.com.desafio.backvotos.domain.search.SearchQuery;
-import br.com.desafio.backvotos.infrastructure.api.PautaApi;
+import br.com.desafio.backvotos.infrastructure.api.v1.PautaApi;
 import br.com.desafio.backvotos.infrastructure.pauta.mapper.PautaMapper;
 import br.com.desafio.backvotos.infrastructure.pauta.model.CadastrarPautaRequest;
 import br.com.desafio.backvotos.infrastructure.pauta.model.IniciarSessaoRequest;
