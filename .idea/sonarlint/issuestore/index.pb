@@ -21,8 +21,6 @@ s
 Cdomain/src/test/java/br/com/desafio/backvotos/domain/PautaTest.java,d\f\dfa3a7fc12a7a2d907b9b1c09ae368ddc810665b
 ü
 oapplication/src/main/java/br/com/desafio/backvotos/application/voto/usecase/cadastrar/CadastrarVotoUseCase.java,1\3\13b46c1fbb35f66c537b57df10289a510ec3775b
-õ
-kapplication/src/test/java/br/com/desafio/backvotos/application/voto/cadastrar/CadastrarVotoUseCaseTest.java,5\4\54b6ffad8ba862e9abfcba4507ebde36341c4deb
 ç
 ]infrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/exception/ErrorType.java,a\b\ab4ccd7117fc493a11664870367cf9828b4a86a3
 â
@@ -61,5 +59,3 @@ iinfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/voto/model
 binfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/voto/persistence/VotoJpa.java,b\5\b57ea034d8554a8335dc96adf8110985cefc99a4
 ê
 `infrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/voto/mapper/VotoMapper.java,0\f\0f2ee2bf51ab66769bea6b776dd0b3cb004bf21f
-¢
-rapplication/src/main/java/br/com/desafio/backvotos/application/pauta/usecase/iniciar/IniciarSessaoUseCaseImpl.java,6\5\651f0f1d057c8f27de7cca6c1f0b05c0a840f930

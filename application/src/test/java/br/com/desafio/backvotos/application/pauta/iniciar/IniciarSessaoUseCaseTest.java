@@ -36,63 +36,61 @@ public class IniciarSessaoUseCaseTest extends UseCaseTest {
         return List.of(gateway);
     }
 
-//    @Test
-//    public void givenAValidDomain_whenCallsIniciarSessao_thenShouldReturnAValidPauta() {
-//        final var idPauta = "a286d30a-2da0-11ed-a261-0242ac120002";
-//        final var minutos = 10;
-//        final var now = Instant.now();
-//        final var dataInicioEsperado = now;
-//        final var dataFimEsperado = now.plusSeconds(minutos * 60);
-//
-//        var input = IniciarSessaoInput.create(idPauta, minutos);
-//
-//        var pauta = Pauta.create(idPauta, "P 1");
-//        when(gateway.getById(any())).thenReturn(Optional.of(pauta));
-//
-//        pauta.update("P 1", dataInicioEsperado, dataFimEsperado);
-//        when(gateway.update(any())).thenReturn(pauta);
-//
-//        final var output = useCase.execute(input);
-//
-//        Assertions.assertNotNull(output);
-//        Assertions.assertNotNull(output.id());
-//        Assertions.assertEquals(idPauta, output.id());
-//        Assertions.assertNotNull(output.dataInicio());
-//        Assertions.assertNotNull(output.dataFim());
-//        Assertions.assertNotNull(output.createdAt());
-//        Assertions.assertNotNull(output.updatedAt());
-//
-//        Mockito.verify(gateway, times(1)).getById(any());
-//        Mockito.verify(gateway, times(1)).update(any());
-//    }
-//
-//    @Test
-//    public void givenMinutosNull_whenCallsIniciarSessao_thenShouldReturnAValidPauta() {
-//        final var idPauta = "a286d30a-2da0-11ed-a261-0242ac120002";
-//        final Integer minutos = null;
-//        final var now = Instant.now();
-//        final var dataInicioEsperado = now;
-//        final var dataFimEsperado = now.plusSeconds(60);
-//
-//        var input = IniciarSessaoInput.create(idPauta, minutos);
-//
-//        var pauta = Pauta.create(idPauta, "P 1");
-//        when(gateway.getById(any())).thenReturn(Optional.of(pauta));
-//
-//        pauta.update("P 1", dataInicioEsperado, dataFimEsperado);
-//        when(gateway.update(any())).thenReturn(pauta);
-//
-//        final var output = useCase.execute(input);
-//
-//        Assertions.assertNotNull(output);
-//        Assertions.assertNotNull(output.id());
-//        Assertions.assertEquals(idPauta, output.id());
-//        Assertions.assertNotNull(output.dataInicio());
-//        Assertions.assertNotNull(output.dataFim());
-//        Assertions.assertNotNull(output.createdAt());
-//        Assertions.assertNotNull(output.updatedAt());
-//
-//        Mockito.verify(gateway, times(1)).getById(any());
-//        Mockito.verify(gateway, times(1)).update(any());
-//    }
+    @Test
+    public void givenAValidDomain_whenCallsIniciarSessao_thenShouldReturnAValidPauta() {
+        final var idPauta = "a286d30a-2da0-11ed-a261-0242ac120002";
+        final var minutos = 10;
+        final var now = Instant.now();
+        final var dataInicioEsperado = now;
+        final var dataFimEsperado = now.plusSeconds(minutos * 60);
+
+        var input = IniciarSessaoInput.create(idPauta, minutos);
+
+        var pauta = Pauta.create(idPauta, "P 1");
+        when(gateway.getById(any())).thenReturn(Optional.of(pauta));
+        when(gateway.update(any())).thenReturn(pauta);
+
+        final var output = useCase.execute(input);
+
+        Assertions.assertNotNull(output);
+        Assertions.assertNotNull(output.id());
+        Assertions.assertEquals(idPauta, output.id());
+        Assertions.assertNotNull(output.dataInicio());
+        Assertions.assertNotNull(output.dataFim());
+        Assertions.assertNotNull(output.createdAt());
+        Assertions.assertNotNull(output.updatedAt());
+
+        Mockito.verify(gateway, times(1)).getById(any());
+        Mockito.verify(gateway, times(1)).update(any());
+    }
+
+    @Test
+    public void givenMinutosNull_whenCallsIniciarSessao_thenShouldReturnAValidPauta() {
+        final var idPauta = "a286d30a-2da0-11ed-a261-0242ac120002";
+        final Integer minutos = null;
+        final var now = Instant.now();
+        final var dataInicioEsperado = now;
+        final var dataFimEsperado = now.plusSeconds(60);
+
+        var input = IniciarSessaoInput.create(idPauta, minutos);
+
+        var pauta = Pauta.create(idPauta, "P 1");
+        when(gateway.getById(any())).thenReturn(Optional.of(pauta));
+
+        pauta.update("P 1", dataInicioEsperado, dataFimEsperado);
+        when(gateway.update(any())).thenReturn(pauta);
+
+        final var output = useCase.execute(input);
+
+        Assertions.assertNotNull(output);
+        Assertions.assertNotNull(output.id());
+        Assertions.assertEquals(idPauta, output.id());
+        Assertions.assertNotNull(output.dataInicio());
+        Assertions.assertNotNull(output.dataFim());
+        Assertions.assertNotNull(output.createdAt());
+        Assertions.assertNotNull(output.updatedAt());
+
+        Mockito.verify(gateway, times(1)).getById(any());
+        Mockito.verify(gateway, times(1)).update(any());
+    }
 }
