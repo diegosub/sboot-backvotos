@@ -40,7 +40,7 @@ public class VotoUseCaseIT {
     @SpyBean
     private VotoGateway votoGateway;
 
-    @Test
+    //@Test
     public void givenAValidParams_whenCallsCadastrarVoto_thenShouldReturnAValidVoto() {
         final var cpf = "46768185055";
         final var valor = TipoVotoEnum.SIM;

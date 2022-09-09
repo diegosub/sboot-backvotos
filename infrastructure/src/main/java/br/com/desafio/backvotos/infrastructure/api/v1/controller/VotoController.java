@@ -30,7 +30,7 @@ public class VotoController implements VotoApi {
                 payload.valor()
         );
         var output = cadastrarVotoUseCase.execute(input);
-        return ResponseEntity.created(URI.create("/voto/" + output.id())).body(VotoMapper.toResponse(output));
+        return ResponseEntity.created(URI.create("/v1/voto/" + output.id())).body(VotoMapper.toResponse(output));
     }
 
     @Override

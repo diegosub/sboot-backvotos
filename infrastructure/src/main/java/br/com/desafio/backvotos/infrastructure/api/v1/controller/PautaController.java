@@ -38,7 +38,7 @@ public class PautaController implements PautaApi {
     public ResponseEntity<PautaResponse> inserir(CadastrarPautaRequest payload) {
         var input = CadastrarPautaInput.create(payload.nome());
         var output = cadastrarPautaUseCase.execute(input);
-        return ResponseEntity.created(URI.create("/pauta/" + output.id())).body(PautaMapper.toResponse(output));
+        return ResponseEntity.created(URI.create("/v1/pauta/" + output.id())).body(PautaMapper.toResponse(output));
     }
 
     @Override

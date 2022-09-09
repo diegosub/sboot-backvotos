@@ -1,5 +1,6 @@
 package br.com.desafio.backvotos.infrastructure.api;
 
+import java.util.Objects;
 import br.com.desafio.backvotos.application.pauta.dto.CadastrarPautaInput;
 import br.com.desafio.backvotos.application.pauta.dto.IniciarSessaoInput;
 import br.com.desafio.backvotos.application.pauta.dto.PautaOutput;
@@ -9,7 +10,7 @@ import br.com.desafio.backvotos.application.pauta.usecase.iniciar.IniciarSessaoU
 import br.com.desafio.backvotos.application.pauta.usecase.pesquisar.PesquisarPautaUseCase;
 import br.com.desafio.backvotos.domain.pauta.Pauta;
 import br.com.desafio.backvotos.infrastructure.ControllerTest;
-import br.com.desafio.backvotos.infrastructure.api.PautaApi;
+import br.com.desafio.backvotos.infrastructure.api.v1.PautaApi;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,12 +18,12 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
-import java.util.Objects;
 
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.equalTo;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
@@ -58,7 +59,7 @@ public class PautaApiTest {
                 .thenReturn(PautaOutput.toOutput(pautaReturn));
 
         // when
-        final var request = post("/pauta")
+        final var request = post("/v1/pauta")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(this.mapper.writeValueAsString(input));
 
@@ -67,7 +68,7 @@ public class PautaApiTest {
 
         // then
         response.andExpect(status().isCreated())
-                .andExpect(header().string("Location", "/pauta/" + pautaReturn.getId()))
+                .andExpect(header().string("Location", "/v1/pauta/" + pautaReturn.getId()))
                 .andExpect(header().string("Content-Type", MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(jsonPath("$.id", equalTo(pautaReturn.getId())));
 
@@ -86,7 +87,7 @@ public class PautaApiTest {
                 .thenReturn(PautaOutput.toOutput(pautaReturn));
 
         // when
-        final var request = put("/pauta/" + pautaReturn.getId() + "/iniciarSessao")
+        final var request = put("/v1/pauta/" + pautaReturn.getId() + "/iniciarSessao")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(this.mapper.writeValueAsString(input));
 

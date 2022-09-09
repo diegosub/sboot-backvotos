@@ -28,7 +28,7 @@ public class ResultadoController implements ResultadoApi {
                 payload.idPauta()
         );
         var output = contabilizarResultadoUseCase.execute(input);
-        return ResponseEntity.created(URI.create("/resultado/" + output.id())).body(ResultadoMapper.toResponse(output));
+        return ResponseEntity.created(URI.create("/v1/resultado/" + output.id())).body(ResultadoMapper.toResponse(output));
     }
 
     @Override

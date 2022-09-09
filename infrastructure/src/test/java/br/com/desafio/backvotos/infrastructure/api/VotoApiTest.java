@@ -7,19 +7,18 @@ import br.com.desafio.backvotos.application.voto.usecase.get.GetVotoUseCase;
 import br.com.desafio.backvotos.domain.enums.TipoVotoEnum;
 import br.com.desafio.backvotos.domain.voto.Voto;
 import br.com.desafio.backvotos.infrastructure.ControllerTest;
+import br.com.desafio.backvotos.infrastructure.api.v1.VotoApi;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import br.com.desafio.backvotos.infrastructure.api.VotoApi;
 
-import java.util.Objects;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -52,7 +51,7 @@ public class VotoApiTest {
                 .thenReturn(VotoOutput.toOutput(voto));
 
         // when
-        final var request = post("/voto")
+        final var request = post("/v1/voto")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(this.mapper.writeValueAsString(input));
 
@@ -61,7 +60,7 @@ public class VotoApiTest {
 
         // then
         response.andExpect(status().isCreated())
-                .andExpect(header().string("Location", "/voto/" + voto.getId()))
+                .andExpect(header().string("Location", "/v1/voto/" + voto.getId()))
                 .andExpect(header().string("Content-Type", MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(jsonPath("$.id", equalTo(voto.getId())));
     }
