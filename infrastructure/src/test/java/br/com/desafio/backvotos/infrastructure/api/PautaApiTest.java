@@ -1,6 +1,7 @@
 package br.com.desafio.backvotos.infrastructure.api;
 
 import br.com.desafio.backvotos.application.pauta.dto.CadastrarPautaInput;
+import br.com.desafio.backvotos.application.pauta.dto.IniciarSessaoInput;
 import br.com.desafio.backvotos.application.pauta.dto.PautaOutput;
 import br.com.desafio.backvotos.application.pauta.usecase.cadastrar.CadastrarPautaUseCase;
 import br.com.desafio.backvotos.application.pauta.usecase.get.GetPautaUseCase;
@@ -78,15 +79,14 @@ public class PautaApiTest {
     @Test
     public void givenAValidInput_whenCallsIniciarSessao_shouldReturnAValidPauta() throws Exception {
         // given
-        final var expectedName = "Pauta de Teste";
-        final var input = new CadastrarPautaInput(expectedName);
         final var pautaReturn = Pauta.create("Pauta Return");
+        final var input = IniciarSessaoInput.create(pautaReturn.getId(), 30);
 
-        when(cadastrarPautaUseCase.execute(any()))
+        when(iniciarSessaoUseCase.execute(any()))
                 .thenReturn(PautaOutput.toOutput(pautaReturn));
 
         // when
-        final var request = post("/pauta")
+        final var request = put("/pauta/" + pautaReturn.getId() + "/iniciarSessao")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(this.mapper.writeValueAsString(input));
 
@@ -94,13 +94,15 @@ public class PautaApiTest {
                 .andDo(print());
 
         // then
-        response.andExpect(status().isCreated())
-                .andExpect(header().string("Location", "/pauta/" + pautaReturn.getId()))
+        response.andExpect(status().isOk())
                 .andExpect(header().string("Content-Type", MediaType.APPLICATION_JSON_VALUE))
-                .andExpect(jsonPath("$.id", equalTo(pautaReturn.getId())));
+                .andExpect(jsonPath("$.id").exists())
+                .andExpect(jsonPath("$.nome", equalTo("Pauta Return")))
+                .andExpect(jsonPath("$.created_at", equalTo(pautaReturn.getCreatedAt().toString())))
+                .andExpect(jsonPath("$.updated_at", equalTo(pautaReturn.getUpdatedAt().toString())));
 
-        verify(cadastrarPautaUseCase, times(1)).execute(argThat(cmd ->
-                Objects.equals(expectedName, cmd.nome())
+        verify(iniciarSessaoUseCase, times(1)).execute(argThat(cmd ->
+                Objects.nonNull(cmd.id())
         ));
     }
 }

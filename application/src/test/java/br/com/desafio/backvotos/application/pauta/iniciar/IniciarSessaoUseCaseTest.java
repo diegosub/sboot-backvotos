@@ -77,7 +77,6 @@ public class IniciarSessaoUseCaseTest extends UseCaseTest {
         var pauta = Pauta.create(idPauta, "P 1");
         when(gateway.getById(any())).thenReturn(Optional.of(pauta));
 
-        pauta.update("P 1", dataInicioEsperado, dataFimEsperado);
         when(gateway.update(any())).thenReturn(pauta);
 
         final var output = useCase.execute(input);

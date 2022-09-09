@@ -23,8 +23,6 @@ Cdomain/src/test/java/br/com/desafio/backvotos/domain/PautaTest.java,d\f\dfa3a7
 Yinfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/exception/Error.java,6\d\6d0784c5024b2f20cd4b00f4df2d039f16757d3f
 ó
 ginfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/exception/ApiExceptionHandler.java,9\2\92649a7682470bdc074c27518319badb1d30853a
-ê
-`infrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/config/WebServerConfig.java,0\3\03c54d3b9cdc6f8190e8d8439fcad91f2a3b1b15
 ó
 gapplication/src/main/java/br/com/desafio/backvotos/application/voto/usecase/get/GetVotoUseCaseImpl.java,8\6\86e8149c73f95eed9d961fe236708b295a156d3a
 Ö
