@@ -13,8 +13,6 @@ Tdomain/src/main/java/br/com/desafio/backvotos/domain/validation/handler/Handler
 Ndomain/src/main/java/br/com/desafio/backvotos/domain/validation/Validator.java,b\c\bc9e9c6d170d6326edcbd571017d2e400ea254aa
 H
 application/build.gradle,a\a\aa9cf0dce48be9892530b6983bf9282cc49f2a75
-¥
-uapplication/src/main/java/br/com/desafio/backvotos/application/pauta/usecase/cadastrar/CadastrarPautaUseCaseImpl.java,1\4\14d7b408689b63e8c7ee626247521d95380ac94e
 ‡
 Wapplication/src/main/java/br/com/desafio/backvotos/application/voto/dto/VotoOutput.java,1\a\1a3bfad3898a6d5fb8e027e6857a6f47ca3b74c5
 s
