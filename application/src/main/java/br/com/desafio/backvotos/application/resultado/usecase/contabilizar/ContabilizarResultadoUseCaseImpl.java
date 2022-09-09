@@ -10,6 +10,7 @@ import br.com.desafio.backvotos.domain.resultado.Resultado;
 import br.com.desafio.backvotos.domain.resultado.ResultadoGateway;
 import br.com.desafio.backvotos.domain.validation.handler.ValidationHandler;
 
+import javax.xml.transform.Result;
 import java.time.Instant;
 
 public class ContabilizarResultadoUseCaseImpl implements ContabilizarResultadoUseCase {
@@ -31,6 +32,7 @@ public class ContabilizarResultadoUseCaseImpl implements ContabilizarResultadoUs
         var idPauta = input.idPauta();
 
         this.validarPauta(idPauta);
+        this.validarResultado(idPauta);
 
         var resultado = Resultado.create(idPauta);
         resultado.validate(new ValidationHandler());
@@ -46,6 +48,14 @@ public class ContabilizarResultadoUseCaseImpl implements ContabilizarResultadoUs
         if(pauta.getDataFim() == null
                 || pauta.getDataFim().isAfter(Instant.now())) {
             throw DomainException.with("Esta pauta ainda está com uma sessão de votação aberta");
+        }
+    }
+
+    private void validarResultado(String idPauta) {
+        var resultado = resultadoGateway.getByIdPauta(idPauta);
+
+        if(!resultado.isEmpty()) {
+            throw DomainException.with("O Resultado desta pauta já foi contabilizado.");
         }
     }
 }
