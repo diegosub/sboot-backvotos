@@ -8,3 +8,9 @@ spring:
     console:
       enabled: true
       path: /h2
+
+rabbitmq:
+  url: localhost
+  port: 5672
+  username: guest
+  password: guest

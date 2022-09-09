@@ -19,8 +19,6 @@ uapplication/src/main/java/br/com/desafio/backvotos/application/pauta/usecase/ca
 Wapplication/src/main/java/br/com/desafio/backvotos/application/voto/dto/VotoOutput.java,1\a\1a3bfad3898a6d5fb8e027e6857a6f47ca3b74c5
 s
 Cdomain/src/test/java/br/com/desafio/backvotos/domain/PautaTest.java,d\f\dfa3a7fc12a7a2d907b9b1c09ae368ddc810665b
-ü
-oapplication/src/main/java/br/com/desafio/backvotos/application/voto/usecase/cadastrar/CadastrarVotoUseCase.java,1\3\13b46c1fbb35f66c537b57df10289a510ec3775b
 ç
 ]infrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/exception/ErrorType.java,a\b\ab4ccd7117fc493a11664870367cf9828b4a86a3
 â
@@ -33,8 +31,6 @@ ginfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/exception/
 gapplication/src/main/java/br/com/desafio/backvotos/application/voto/usecase/get/GetVotoUseCaseImpl.java,8\6\86e8149c73f95eed9d961fe236708b295a156d3a
 Ö
 Udomain/src/main/java/br/com/desafio/backvotos/domain/exception/NotFoundException.java,f\c\fcc826e18cf6795a02c8b5717a1610e71506ad6d
-ê
-`application/src/main/java/br/com/desafio/backvotos/application/pauta/dto/IniciarSessaoInput.java,6\0\60eb6882e70abd0dcabf4967cb865a865911cc44
 ô
 iinfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/voto/persistence/VotoRepository.java,f\e\fe71ec7bcb659f5a3e00d3180b289854cc4538cc
 ë
@@ -43,12 +39,8 @@ ainfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/voto/model
 `infrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/voto/model/CpfResponse.java,e\5\e56784d8b6d6244f6f4a0523f9509939d01993a5
 É
 Sdomain/src/main/java/br/com/desafio/backvotos/domain/exception/DomainException.java,f\d\fdb92be7955491638963eae6fcbc1925fce18ad9
-ù
-minfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/communication/sync/VerificarCpfSync.java,6\2\623cfa47eb7b8a9326c0ad33c44880fd062eb5e1
 s
 Cdomain/src/main/java/br/com/desafio/backvotos/domain/voto/Voto.java,6\4\64e85a85b2f6ca5bcf3b3c1cf9f38a71d3240311
-é
-^infrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/voto/VotoGatewayImpl.java,8\b\8b89a84ef5811b00fcdf4f22395f2b78f024c137
 |
 Ldomain/src/main/java/br/com/desafio/backvotos/domain/enums/TipoVotoEnum.java,4\1\416ad17ebb0af7a2c542f8aae47b5845925bf7c4
 r
@@ -57,5 +49,3 @@ Bdomain/src/test/java/br/com/desafio/backvotos/domain/VotoTest.java,4\2\4299804
 iinfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/voto/model/CadastrarVotoRequest.java,c\f\cfe33142202bdc4da63d8e6527a536b7c30c2c49
 í
 binfrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/voto/persistence/VotoJpa.java,b\5\b57ea034d8554a8335dc96adf8110985cefc99a4
-ê
-`infrastructure/src/main/java/br/com/desafio/backvotos/infrastructure/voto/mapper/VotoMapper.java,0\f\0f2ee2bf51ab66769bea6b776dd0b3cb004bf21f
